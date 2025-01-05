@@ -3,7 +3,6 @@
 import { FC, ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { GoHome } from 'react-icons/go';
 
 import { cn } from '@/lib/utils';
 
@@ -25,10 +24,7 @@ const NavLink: FC<NavLinkProps> = ({ children, link }) => {
       )}
       href={link}
     >
-      <div className="flex items-center gap-1 text-sm">
-        <GoHome />
-        {children}
-      </div>
+      <div className="flex items-center gap-1 text-sm">{children}</div>
     </Link>
   );
 };
