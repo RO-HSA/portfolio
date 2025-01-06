@@ -13,6 +13,7 @@ interface NavLinkProps {
 
 const NavLink: FC<NavLinkProps> = ({ children, link }) => {
   const pathname = usePathname();
+  const isInternalLink = link.startsWith('/');
 
   return (
     <Link
@@ -23,6 +24,7 @@ const NavLink: FC<NavLinkProps> = ({ children, link }) => {
           : 'hover:bg-foreground/20 hover:text-primary',
       )}
       href={link}
+      target={isInternalLink ? undefined : '_blank'}
     >
       <div className="flex items-center gap-1 text-sm">{children}</div>
     </Link>

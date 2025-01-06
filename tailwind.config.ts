@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import headlessui from '@headlessui/tailwindcss';
 
 export default {
   content: [
@@ -19,5 +20,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [headlessui],
 } satisfies Config;

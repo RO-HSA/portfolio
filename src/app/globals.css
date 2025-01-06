@@ -25,4 +25,5 @@
 body {
   color: rgb(var(--foreground));
   background: rgb(var(--background));
+  height: 100vh;
 }
