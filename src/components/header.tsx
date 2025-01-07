@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <ul className="flex flex-wrap gap-3">
           {techs.map(tech => (
-            <TechRibbon key={tech} color="rgb(var(--secondary))">
+            <TechRibbon key={tech} color="rgba(var(--primary), 0.2">
               {tech}
             </TechRibbon>
           ))}
