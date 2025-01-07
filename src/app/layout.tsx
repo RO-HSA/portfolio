@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <div className="grid grid-cols-[30%_1fr] justify-center h-screen pt-4">
           <Sidebar />
-          <main className="h-full">{children}</main>
+          <main className="h-full lg:pl-11">{children}</main>
         </div>
       </body>
     </html>
