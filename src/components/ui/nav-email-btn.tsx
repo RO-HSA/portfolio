@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Popover,
   PopoverButton,
@@ -8,6 +8,7 @@ import {
   useClose,
 } from '@headlessui/react';
 import { MdOutlineMail, MdContentCopy } from 'react-icons/md';
+import { FaRegSquareCheck } from 'react-icons/fa6';
 
 const Closer = () => {
   const close = useClose();
@@ -15,15 +16,22 @@ const Closer = () => {
   useEffect(() => {
     setTimeout(() => {
       close();
-    }, 1000);
+    }, 600);
   });
 
   return <></>;
 };
 
 const NavEmailButton = () => {
+  const [isCopying, setIsCopying] = useState<boolean>(false);
+
   const copyToClipboard = () => {
+    setIsCopying(true);
     navigator.clipboard.writeText('robertdahora@gmail.com');
+
+    setTimeout(() => {
+      setIsCopying(false);
+    }, 600);
   };
 
   return (
@@ -34,12 +42,19 @@ const NavEmailButton = () => {
           E-mail
         </div>
         <Popover className="relative flex items-center">
-          <PopoverButton>
-            <MdContentCopy
-              size={16}
-              className="cursor-pointer hover:text-primary/60"
-              onClick={copyToClipboard}
-            />
+          <PopoverButton className="focus:outline-none focus:ring-0">
+            {isCopying ? (
+              <FaRegSquareCheck
+                size={16}
+                className="cursor-default hover:text-primary/60"
+              />
+            ) : (
+              <MdContentCopy
+                size={16}
+                className="cursor-pointer hover:text-primary/60"
+                onClick={copyToClipboard}
+              />
+            )}
           </PopoverButton>
           <PopoverPanel
             anchor="bottom"
