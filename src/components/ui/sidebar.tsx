@@ -4,7 +4,7 @@ import { sidebarItems } from '@/configs/sidebar-items';
 
 const Sidebar = () => {
   return (
-    <nav className="flex flex-col items-end pr-4 border-r border-primary h-full">
+    <nav className="flex flex-col items-end pr-4 border-r border-primary/30 h-full">
       <ul className="flex flex-col items-end w-full gap-2">
         {sidebarItems.map(({ link, title, icon: Icon }) => (
           <li key={title} className="flex justify-end w-full">
