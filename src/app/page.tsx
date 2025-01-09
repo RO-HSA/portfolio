@@ -1,5 +1,6 @@
 import AboutMe from '@/components/about-me';
-import ExperiencesList from '@/components/experiences';
+import EducationsList from '@/components/educations-list';
+import ExperiencesList from '@/components/experiences-list';
 import Header from '@/components/header';
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
 
       <div className="grid grid-cols-2 gap-2">
         <ExperiencesList />
+
+        <EducationsList />
       </div>
     </div>
   );
