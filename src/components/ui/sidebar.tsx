@@ -1,5 +1,5 @@
 import NavEmailButton from './nav-email-btn';
-import NavLink from './nav-link';
+import LinkButton from './link-button';
 import { sidebarItems } from '@/configs/sidebar-items';
 
 const Sidebar = () => {
@@ -8,10 +8,10 @@ const Sidebar = () => {
       <ul className="flex flex-col items-end w-full gap-2">
         {sidebarItems.map(({ link, title, icon: Icon }) => (
           <li key={title} className="flex justify-end w-full">
-            <NavLink link={link}>
+            <LinkButton link={link}>
               <Icon />
               {title}
-            </NavLink>
+            </LinkButton>
           </li>
         ))}
         <li className="flex justify-end w-full">
