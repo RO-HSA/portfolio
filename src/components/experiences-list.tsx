@@ -8,7 +8,7 @@ import Experience from './ui/experience';
 const ExperiencesList = () => {
   return (
     <Section title="Experiências" icon={IoBriefcaseOutline}>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between h-full">
         <div className="flex flex-col gap-8">
           {experiences.map(
             ({ companyName, image, role, startDate, endDate }) => (
