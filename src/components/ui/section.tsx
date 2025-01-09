@@ -12,7 +12,7 @@ interface SectionProps {
 
 const Section: FC<SectionProps> = ({ title, icon: Icon, url, children }) => {
   return (
-    <section className="flex flex-col gap-6 border border-primary/30 p-8 rounded-lg w-full">
+    <section className="flex flex-col gap-6 border border-primary/30 p-7 rounded-lg w-full">
       <div className="flex justify-between">
         <div className="flex gap-2 items-center">
           <Icon size={25} />

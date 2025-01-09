@@ -7,18 +7,24 @@ import { type VariantProps, cva } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
 
-const linkButtonVariants = cva('flex justify-start transition-colors w-full', {
-  variants: {
-    variant: {
-      link: 'py-2 px-2 max-w-[218px] rounded-md h-12 text-sm',
-      download:
-        'flex justify-center items-center py-2 bg-primary rounded-md font-bold text-xs gap-2',
+const linkButtonVariants = cva(
+  'flex items-center justify-start py-2 px-2 transition-colors w-full',
+  {
+    variants: {
+      variant: {
+        default: 'gap-1 max-w-[218px] rounded-md h-12 text-sm',
+        download:
+          'justify-center items-center bg-primary hover:bg-primary/80 hover:text-foreground/80 rounded-md font-bold text-xs gap-2',
+        link: 'justify-center items-center bg-primary hover:bg-primary/80 hover:text-foreground/80 rounded-md font-bold text-xs gap-2',
+        linkOutline:
+          'justify-center items-center bg-background hover:bg-background/80 hover:text-foreground/80 border border-primary/80 rounded-md font-bold text-xs gap-2',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
     },
   },
-  defaultVariants: {
-    variant: 'link',
-  },
-});
+);
 
 interface LinkButtonProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -36,19 +42,21 @@ const LinkButton: FC<LinkButtonProps> = ({
   const pathname = usePathname();
   const isInternalLink = link.startsWith('/');
 
+  const isDefault = !variant || variant === 'default';
+
   return (
     <Link
       className={cn(
         linkButtonVariants({ variant, className }),
-        pathname === link && (!variant || variant === 'link')
+        pathname === link && isDefault
           ? 'bg-foreground/20 text-primary hover:bg-foreground/10 hover:text-primary/90'
-          : 'hover:bg-foreground/20 hover:text-primary',
+          : isDefault && 'hover:bg-foreground/20 hover:text-primary',
       )}
       href={link}
       download={variant === 'download'}
       target={isInternalLink ? undefined : '_blank'}
     >
-      <div className="flex items-center gap-1 text-inherit">{children}</div>
+      {children}
     </Link>
   );
 };

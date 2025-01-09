@@ -2,6 +2,7 @@ import AboutMe from '@/components/about-me';
 import EducationsList from '@/components/educations-list';
 import ExperiencesList from '@/components/experiences-list';
 import Header from '@/components/header';
+import ProjectsList from '@/components/projects-list';
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
 
         <EducationsList />
       </div>
+
+      <ProjectsList />
     </div>
   );
 }

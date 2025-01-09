@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import Sidebar from '@/components/ui/sidebar';
+import Sidebar from '@/components/sidebar';
 import './globals.css';
 
 const inter = Inter({
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased font-inter container mx-auto`}
       >
-        <div className="grid grid-cols-[30%_1fr] justify-center h-screen pt-4">
+        <div className="flex justify-center h-screen pt-4 relative">
           <Sidebar />
           <main className="h-full lg:pl-11">{children}</main>
         </div>

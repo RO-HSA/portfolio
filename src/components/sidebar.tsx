@@ -1,5 +1,5 @@
-import NavEmailButton from './nav-email-btn';
-import LinkButton from './link-button';
+import NavEmailButton from './ui/nav-email-btn';
+import LinkButton from './ui/link-button';
 import { sidebarItems } from '@/configs/sidebar-items';
 
 const Sidebar = () => {

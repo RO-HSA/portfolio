@@ -1,4 +1,5 @@
 import { ExperienceProps } from '@/components/ui/experience';
+import { ProjectBannerProps } from '@/components/ui/project-banner';
 
 export const techs = [
   'React',
@@ -45,5 +46,16 @@ export const educations: ExperienceProps[] = [
     role: 'Ciências Contábeis',
     startDate: new Date('2018-01-01'),
     endDate: new Date('2022-01-01'),
+  },
+];
+
+export const projects: ProjectBannerProps[] = [
+  {
+    title: 'eplay',
+    backgroundImg: '/projects/eplay.jpg',
+    description:
+      'Projeto com proposta educacional de uma loja de jogos, com funcionalidades de adicionar e remover itens do carrinho e contendo toda a jornada de compra. Desenvolvido utilizando React e Redux para gerenciamento global de estados.',
+    deployUrl: 'https://eplay-steel.vercel.app',
+    repositoryUrl: 'https://github.com/RO-HSA/eplay',
   },
 ];
