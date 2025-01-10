@@ -19,3 +19,7 @@ export function getExperienceSpan(startDate: Date, endDate: Date): string {
 
   return experienceSpan.trim();
 }
+
+export function shortenText(text: string, maxLength: number): string {
+  return text.length >= maxLength ? text.slice(0, maxLength) + '...' : text;
+}

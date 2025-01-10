@@ -51,6 +51,15 @@ export const educations: ExperienceProps[] = [
 
 export const projects: ProjectBannerProps[] = [
   {
+    title: 'Streaming Interactions',
+    backgroundImg: '/projects/streaming_interactions.jpg',
+    description:
+      'Extensão de navegador publicada na Chrome Web Store, que adiciona uma barra lateral flutuante em sites de streaming, como Netflix, Disney+, Crunchyroll e outros, possibilitando que os usuários leiam, comentem e respondam outros comentários sobre o episódio ou filme que estão assistindo em tempo real. \nStacks: React, Typescript, Zustand.',
+    deployUrl:
+      'https://chromewebstore.google.com/detail/streaming-interactions/jplcdapcdhmhmgigpeafegjmlnkeechl',
+    repositoryUrl: 'https://github.com/RO-HSA/streaming-interactions',
+  },
+  {
     title: 'eplay',
     backgroundImg: '/projects/eplay.jpg',
     description:
