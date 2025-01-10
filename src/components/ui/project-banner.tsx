@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa6';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { cn, shortenText } from '@/lib/utils';
+import { ClassValue } from 'clsx';
 
+import { cn, shortenText } from '@/lib/utils';
 import LinkButton from './link-button';
 
 const projectBannerVariants = cva('w-full h-full from-transparent to-black', {
@@ -24,6 +25,7 @@ export interface ProjectBannerProps
   description: string;
   deployUrl: string;
   repositoryUrl: string;
+  className?: ClassValue;
 }
 
 const ProjectBanner: FC<ProjectBannerProps> = ({
