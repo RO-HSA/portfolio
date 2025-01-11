@@ -21,12 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased font-inter container mx-auto`}
-      >
-        <div className="flex justify-center h-screen pt-4 relative">
-          <Sidebar />
-          <main className="h-full lg:pl-11">{children}</main>
+      <body className={`${inter.variable} antialiased font-inter pt-4`}>
+        <div>
+          <div className="grid grid-cols-[30%,70%] container max-w-[1024px] mx-auto h-screen">
+            <div>
+              <Sidebar />
+            </div>
+            <main className="h-full pb-11">{children}</main>
+          </div>
         </div>
       </body>
     </html>

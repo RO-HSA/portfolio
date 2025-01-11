@@ -6,12 +6,12 @@ import ProjectsList from '@/components/projects-list';
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 gap-8 max-w-[668px]">
+    <div className="grid grid-cols-1 gap-8">
       <Header />
 
       <AboutMe />
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-4">
         <ExperiencesList />
 
         <EducationsList />
