@@ -23,7 +23,7 @@ export const sidebarItems: SidebarItem[] = [
     title: 'Projetos',
   },
   {
-    link: '/stack',
+    link: '/stacks',
     icon: MdComputer,
     title: 'Tecnologias e Ferramentas',
   },
