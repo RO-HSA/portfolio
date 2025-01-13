@@ -1,6 +1,10 @@
 import { ExperienceProps } from '@/components/ui/experience';
 import { ProjectBannerProps } from '@/components/ui/project-banner';
 
+export interface Projects extends ProjectBannerProps {
+  stack?: 'frontend' | 'backend' | 'fullstack';
+}
+
 export const techs = [
   'React',
   'Next.js',
@@ -49,7 +53,7 @@ export const educations: ExperienceProps[] = [
   },
 ];
 
-export const projects: ProjectBannerProps[] = [
+export const projects: Projects[] = [
   {
     title: 'Streaming Interactions',
     backgroundImg: '/projects/streaming_interactions.jpg',
@@ -58,6 +62,7 @@ export const projects: ProjectBannerProps[] = [
     deployUrl:
       'https://chromewebstore.google.com/detail/streaming-interactions/jplcdapcdhmhmgigpeafegjmlnkeechl',
     repositoryUrl: 'https://github.com/RO-HSA/streaming-interactions',
+    stack: 'fullstack',
   },
   {
     title: 'eplay',
@@ -66,5 +71,15 @@ export const projects: ProjectBannerProps[] = [
       'Projeto com proposta educacional de uma loja de jogos, com funcionalidades de adicionar e remover itens do carrinho e contendo toda a jornada de compra. Desenvolvido utilizando React e Redux para gerenciamento global de estados.',
     deployUrl: 'https://eplay-steel.vercel.app',
     repositoryUrl: 'https://github.com/RO-HSA/eplay',
+    stack: 'frontend',
+  },
+  {
+    title: 'dtLabs Dashboard',
+    backgroundImg: '/projects/dtlabs.png',
+    description:
+      'Solução desenvolvida para o desafio técnico da DTLabs, em React e Typescript',
+    deployUrl: 'https://dtlabs-challenge.vercel.app',
+    repositoryUrl: 'https://github.com/RO-HSA/dtlabs-challenge',
+    stack: 'frontend',
   },
 ];
