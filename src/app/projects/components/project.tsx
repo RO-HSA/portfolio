@@ -20,7 +20,7 @@ const Project: FC<ProjectProps> = ({
 }) => {
   const MAX_DESCRIPTION_LENGTH = 174;
   return (
-    <div className="flex flex-col gap-4 justify-between p-8 border border-primary/30 rounded-lg w-80">
+    <div className="flex flex-col gap-4 justify-between p-8 border border-primary/30 rounded-lg w-[340px]">
       <div className="flex flex-col gap-4">
         <div
           className="rounded-md w-64 h-[170px] bg-cover overflow-clip bg-no-repeat"
