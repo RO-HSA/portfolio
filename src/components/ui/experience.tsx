@@ -28,7 +28,6 @@ const Experience: FC<ExperienceProps> = ({
   const endMonthWithZero = endMonth < 10 ? `0${endMonth}` : endMonth;
 
   const experienceSpan = getExperienceSpan(startDate, endDate || new Date());
-  console.log({ experienceSpan });
 
   return (
     <div className="flex gap-4">
