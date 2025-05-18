@@ -8,8 +8,8 @@ import Experience from './ui/experience';
 const ExperiencesList = () => {
   return (
     <Section title="Experiências" icon={IoBriefcaseOutline}>
-      <div className="flex flex-col justify-between h-full">
-        <div className="flex flex-col gap-8">
+      <div className="flex flex-col justify-between h-full gap-4">
+        <div className="flex flex-col gap-4">
           {experiences.map(
             ({ companyName, image, role, startDate, endDate }) => (
               <Experience

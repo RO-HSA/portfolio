@@ -7,7 +7,7 @@ import Section from './ui/section';
 const EducationsList = () => {
   return (
     <Section title="Formações" icon={PiGraduationCap}>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         {educations.map(
           ({
             companyName: school,

@@ -18,8 +18,15 @@ export const experiences: ExperienceProps[] = [
   {
     companyName: 'Cloudiabot',
     image: '/cloudiabot.jpg',
+    role: 'Desenvolvedor Full Stack',
+    startDate: new Date('2025-04-21'),
+  },
+  {
+    companyName: 'Cloudiabot',
+    image: '/cloudiabot.jpg',
     role: 'Estágio Desenvolvimento Full Stack',
     startDate: new Date('2024-10-21'),
+    endDate: new Date('2025-04-20'),
   },
   {
     companyName: 'SOWITEC do Brasil',
