@@ -1,12 +1,13 @@
 import NavEmailButton from './ui/nav-email-btn';
 import LinkButton from './ui/link-button';
 import { useSidebarItems } from '@/hooks';
+import LanguageSwitcher from './language-switcher';
 
 const Sidebar = () => {
   const sidebarItems = useSidebarItems();
 
   return (
-    <nav className="flex flex-col items-end pr-4 border-r border-primary/30 h-screen fixed">
+    <nav className="flex flex-col items-end pr-4 border-r border-primary/30 h-screen fixed gap-6">
       <ul className="flex flex-col items-end w-full gap-2">
         {sidebarItems.map(({ link, title, icon: Icon }) => (
           <li key={title} className="flex justify-end w-full">
@@ -20,6 +21,8 @@ const Sidebar = () => {
           <NavEmailButton />
         </li>
       </ul>
+
+      <LanguageSwitcher />
     </nav>
   );
 };

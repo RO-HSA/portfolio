@@ -17,6 +17,11 @@ export default {
         foreground: 'rgba(var(--foreground))',
         primary: 'rgba(var(--primary))',
         secondary: 'rgba(var(--secondary))',
+        border: 'hsl(var(--border))',
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
       },
     },
   },

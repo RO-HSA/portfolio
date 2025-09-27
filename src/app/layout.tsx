@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
 import { Inter } from 'next/font/google';
 
 import Sidebar from '@/components/sidebar';
 import './globals.css';
-import { NextIntlClientProvider } from 'next-intl';
 
 const inter = Inter({
   variable: '--font-inter',

@@ -9,6 +9,8 @@
     --foreground: 236, 240, 241;
     --primary: 130, 87, 229;
     --secondary: 28, 23, 64;
+    --border: 214 20% 35%;
+    --muted-foreground: 215 20% 65%;
   }
 }
 
@@ -19,6 +21,9 @@
     --foreground: 236, 240, 241;
     --primary: 130, 87, 229;
     --secondary: 28, 23, 64;
+    --border: 214 20% 35%;
+    --muted: 224 20% 15%;
+    --muted-foreground: 215 20% 65%;
   }
 }
 
