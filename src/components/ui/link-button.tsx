@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation';
 import { type VariantProps, cva } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const linkButtonVariants = cva(
-  'flex items-center justify-start py-2 px-2 transition-colors w-full',
+  'flex items-center justify-start py-2 px-2 transition-colors w-full justify-between',
   {
     variants: {
       variant: {
@@ -30,6 +31,7 @@ interface LinkButtonProps
   extends AnchorHTMLAttributes<HTMLAnchorElement>,
     VariantProps<typeof linkButtonVariants> {
   link: string;
+  shouldRenderLinkIcon?: boolean;
   children: ReactNode;
 }
 
@@ -38,6 +40,7 @@ const LinkButton: FC<LinkButtonProps> = ({
   link,
   variant,
   className,
+  shouldRenderLinkIcon = false,
 }) => {
   const pathname = usePathname();
   const isInternalLink = link.startsWith('/');
@@ -56,7 +59,8 @@ const LinkButton: FC<LinkButtonProps> = ({
       download={variant === 'download'}
       target={isInternalLink ? undefined : '_blank'}
     >
-      {children}
+      <div className="flex gap-1 items-center">{children}</div>
+      {shouldRenderLinkIcon && !isInternalLink && <GoArrowUpRight size={18} />}
     </Link>
   );
 };

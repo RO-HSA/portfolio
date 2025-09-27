@@ -5,7 +5,7 @@
     },
     "AboutMe": {
       "title": "Über mich",
-      "content": "Hallo, ich bin Robert Santos, ein Full-Stack-Entwickler mit einem Jahr Berufserfahrung. Ich studiere Systems Analysis and Development und bin ein Technologie-Enthusiast, der leidenschaftlich gerne komplexe Probleme löst. Geboren und aufgewachsen in Salvador/BA, spezialisiere ich mich auf die Entwicklung von Systemen, die echten Mehrwert für den Markt schaffen."
+      "content": "Ich bin ein Full-Stack-Entwickler, der sich für Technologie begeistert und darauf fokussiert ist, intelligente und skalierbare Lösungen für reale Probleme zu schaffen. Ich habe praktische Erfahrung im gesamten Softwareentwicklungszyklus - von komplexen Webanwendungen bis hin zu veröffentlichten Browser-Erweiterungen.\n\nMein Tech-Stack umfasst **React**, **Next.js**, **Angular**, **TypeScript**, **Node.js**, **NestJS**, **Spring Boot**, **PostgreSQL**, **Docker** und **AWS**, mit Schwerpunkt auf Leistung, Skalierbarkeit und Best Practices. Als Tech Lead habe ich bereits ehrenamtliche Squads geleitet, Architekturen definiert, Code-Reviews durchgeführt und die Qualität der Auslieferungen sichergestellt. Darüber hinaus trage ich aktiv zu Open-Source-Projekten bei und entwickle eigene Lösungen wie Erweiterungen und digitale Engagement-Tools."
     },
     "ExperiencesList": {
       "title": "Berufserfahrung",
