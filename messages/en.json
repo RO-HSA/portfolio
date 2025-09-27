@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "Header": {
+      "role": "Full Stack Developer"
+    },
+    "AboutMe": {
+      "title": "About me",
+      "content": "Hello, I'm Robert Santos, a Full Stack Developer with 1 year of professional experience in the field, currently pursuing a degree in Systems Analysis and Development. I'm a technology enthusiast and passionate about solving complex problems, born and raised in Salvador, Brazil. I specialize in developing systems that deliver value to the market."
+    },
+    "ExperiencesList": {
+      "title": "Experience",
+      "resumeButton": "My Resume"
+    },
+    "EducationList": {
+      "title": "Education"
+    },
+    "ProjectsList": {
+      "title": "Projects"
+    }
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "This page lists some of the projects I've developed. If you want to see more, just visit my"
+  },
+  "StacksPage": {
+    "title": "Stack and Tools",
+    "description": "These are the technologies and tools I have learned throughout my career, during college, courses, and personal projects. Feel free to explore and discover the technologies that have enhanced my expertise in development.",
+    "database": "Database",
+    "versioning": "Versioning"
+  },
+  "Nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "stack": "Tech Stack and Tools",
+    "email": "Email copied successfully!"
+  },
+  "Section": {
+    "seeMore": "See more"
+  },
+  "ProjectBanner": {
+    "visit": "Visit",
+    "repository": "Repository"
+  },
+  "Experiences": {
+    "cloudiabotFull": {
+      "company": "Cloudiabot",
+      "role": "Software Engineer"
+    },
+    "cloudiabotIntern": {
+      "company": "Cloudiabot",
+      "role": "Software Engineering Internship"
+    },
+    "sowitec": {
+      "company": "Sowitec Brasil",
+      "role": "Accounting Assistant"
+    }
+  },
+  "Education": {
+    "unifacs": {
+      "institution": "UNIFACS",
+      "degree": "Accounting"
+    },
+    "unime": {
+      "institution": "Faculdade UNIME",
+      "degree": "Systems Analysis and Development"
+    },
+    "ebac": {
+      "institution": "EBAC",
+      "degree": "Full Stack Development"
+    }
+  },
+  "Span": {
+    "span_month": "{count} month",
+    "span_month_plural": "{count} months",
+    "span_year": "{count} year",
+    "span_year_plural": "{count} years",
+    "span_and": " and ",
+    "span_current": "Current"
+  },
+  "Projects": {
+    "streaminginteractions": {
+      "title": "Streaming Interactions",
+      "description": "Browser extension published on the Chrome Web Store that adds a floating sidebar to streaming sites like Netflix, Disney+, Crunchyroll, and others, allowing users to read, comment, and reply to other comments about the episode or movie they are watching in real time.\nStacks: React, Typescript, Zustand."
+    },
+    "eplay": {
+      "title": "eplay",
+      "description": "Educational project for a game store, with features to add and remove items from the cart and covering the entire shopping journey. Developed using React and Redux for global state management."
+    },
+    "dtlabs": {
+      "title": "dtLabs Dashboard",
+      "description": "Solution developed for the dtLabs technical challenge, using React and Typescript."
+    }
+  }
+}

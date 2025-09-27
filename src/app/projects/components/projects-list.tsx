@@ -1,6 +1,6 @@
-import { Projects } from '@/configs/main-items';
 import { FC } from 'react';
 import Project from './project';
+import { Projects } from '@/interfaces/project';
 
 interface ProjectsListProps {
   title: string;

@@ -1,5 +1,7 @@
 import LinkButton from '@/components/ui/link-button';
+import { MAX_DESCRIPTION_LENGTH } from '@/constants';
 import { shortenText } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa6';
 
@@ -18,7 +20,8 @@ const Project: FC<ProjectProps> = ({
   deployUrl,
   repositoryUrl,
 }) => {
-  const MAX_DESCRIPTION_LENGTH = 174;
+  const t = useTranslations('ProjectBanner');
+
   return (
     <div className="flex flex-col gap-4 justify-between p-8 border border-primary/30 rounded-lg w-[340px]">
       <div className="flex flex-col gap-4">
@@ -35,13 +38,13 @@ const Project: FC<ProjectProps> = ({
         <div>
           <LinkButton variant="linkOutline" link={repositoryUrl}>
             <FaGithub size={18} />
-            Código-fonte
+            {t('repository')}
           </LinkButton>
         </div>
         <div>
           <LinkButton link={deployUrl} variant="link">
             <FaLink size={18} />
-            Visitar
+            {t('visit')}
           </LinkButton>
         </div>
       </div>

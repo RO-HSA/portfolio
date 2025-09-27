@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 
 import Sidebar from '@/components/sidebar';
 import './globals.css';
+import { NextIntlClientProvider } from 'next-intl';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -22,14 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased font-inter pt-4`}>
-        <div>
-          <div className="grid grid-cols-[30%,70%] container max-w-[1024px] mx-auto h-screen">
-            <div>
-              <Sidebar />
+        <NextIntlClientProvider>
+          <div>
+            <div className="grid grid-cols-[30%,70%] container max-w-[1024px] mx-auto h-screen">
+              <div>
+                <Sidebar />
+              </div>
+              <main className="h-full pb-11">{children}</main>
             </div>
-            <main className="h-full pb-11">{children}</main>
           </div>
-        </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

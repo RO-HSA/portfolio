@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "Header": {
+      "role": "Full-Stack-Entwickler"
+    },
+    "AboutMe": {
+      "title": "Über mich",
+      "content": "Hallo, ich bin Robert Santos, ein Full-Stack-Entwickler mit einem Jahr Berufserfahrung. Ich studiere Systems Analysis and Development und bin ein Technologie-Enthusiast, der leidenschaftlich gerne komplexe Probleme löst. Geboren und aufgewachsen in Salvador/BA, spezialisiere ich mich auf die Entwicklung von Systemen, die echten Mehrwert für den Markt schaffen."
+    },
+    "ExperiencesList": {
+      "title": "Berufserfahrung",
+      "resumeButton": "Mein Lebenslauf"
+    },
+    "EducationList": {
+      "title": "Ausbildung"
+    },
+    "ProjectsList": {
+      "title": "Projekte"
+    }
+  },
+  "ProjectsPage": {
+    "title": "Projekte",
+    "description": "Auf dieser Seite finden Sie eine Auswahl der Projekte, die ich entwickelt habe. Für weitere Projekte können Sie gerne meinen"
+  },
+  "StacksPage": {
+    "title": "Technologien & Werkzeuge",
+    "description": "Hier sehen Sie die Technologien und Werkzeuge, die ich im Laufe meiner Karriere, während des Studiums, in Kursen und persönlichen Projekten erlernt habe. Erkunden Sie gerne, welche Tools meine Fähigkeiten in der Softwareentwicklung erweitert haben.",
+    "database": "Datenbanken",
+    "versioning": "Versionierung"
+  },
+  "Nav": {
+    "home": "Start",
+    "projects": "Projekte",
+    "stack": "Technologien & Werkzeuge",
+    "email": "E-Mail erfolgreich kopiert!"
+  },
+  "Section": {
+    "seeMore": "Mehr erfahren"
+  },
+  "ProjectBanner": {
+    "visit": "Besuchen",
+    "repository": "Quellcode"
+  },
+  "Experiences": {
+    "cloudiabotFull": {
+      "company": "Cloudiabot",
+      "role": "Full-Stack-Entwickler"
+    },
+    "cloudiabotIntern": {
+      "company": "Cloudiabot",
+      "role": "Praktikum Full-Stack-Entwicklung"
+    },
+    "sowitec": {
+      "company": "Sowitec Brasil",
+      "role": "Buchhaltungsassistent"
+    }
+  },
+  "Education": {
+    "unifacs": {
+      "institution": "UNIFACS",
+      "degree": "Buchhaltungswissenschaften"
+    },
+    "unime": {
+      "institution": "Faculdade UNIME",
+      "degree": "Systems Analysis and Development"
+    },
+    "ebac": {
+      "institution": "EBAC",
+      "degree": "Full-Stack-Entwicklung"
+    }
+  },
+  "Span": {
+    "span_month": "{count} Monat",
+    "span_month_plural": "{count} Monate",
+    "span_year": "{count} Jahr",
+    "span_year_plural": "{count} Jahre",
+    "span_and": " und ",
+    "span_current": "Aktuell"
+  },
+  "Projects": {
+    "streaminginteractions": {
+      "title": "Streaming Interactions",
+      "description": "Browser-Erweiterung, veröffentlicht im Chrome Web Store, die eine schwebende Seitenleiste auf Streaming-Plattformen wie Netflix, Disney+, Crunchyroll und anderen hinzufügt. Sie ermöglicht es den Nutzern, Kommentare zu lesen, zu schreiben und in Echtzeit auf andere Kommentare zu der Episode oder dem Film zu antworten, den sie gerade ansehen.\nTechnologien: React, Typescript, Zustand."
+    },
+    "eplay": {
+      "title": "eplay",
+      "description": "Ein edukatives Projekt für einen Online-Spieleshop mit Funktionen zum Hinzufügen und Entfernen von Artikeln aus dem Warenkorb sowie vollständigem Kaufprozess. Entwickelt mit React und Redux für ein globales State-Management."
+    },
+    "dtlabs": {
+      "title": "dtLabs Dashboard",
+      "description": "Dashboard-Lösung, entwickelt für die technische Challenge von DTLabs, umgesetzt in React und Typescript."
+    }
+  }
+}

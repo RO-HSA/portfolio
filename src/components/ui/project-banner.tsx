@@ -5,6 +5,8 @@ import { ClassValue } from 'clsx';
 
 import { cn, shortenText } from '@/lib/utils';
 import LinkButton from './link-button';
+import { useTranslations } from 'next-intl';
+import { MAX_DESCRIPTION_LENGTH } from '@/constants';
 
 const projectBannerVariants = cva('w-full h-full from-transparent to-black', {
   variants: {
@@ -36,7 +38,7 @@ const ProjectBanner: FC<ProjectBannerProps> = ({
   repositoryUrl,
   variant,
 }) => {
-  const MAX_DESCRIPTION_LENGTH = 174;
+  const t = useTranslations('ProjectBanner');
 
   const isDefaultVariant = !variant || variant === 'leftToRight';
 
@@ -68,13 +70,13 @@ const ProjectBanner: FC<ProjectBannerProps> = ({
             <div>
               <LinkButton link={deployUrl} variant="link">
                 <FaLink size={18} />
-                Visitar
+                {t('visit')}
               </LinkButton>
             </div>
             <div>
               <LinkButton link={repositoryUrl} variant="linkOutline">
                 <FaGithub size={18} />
-                Código-fonte
+                {t('repository')}
               </LinkButton>
             </div>
           </div>

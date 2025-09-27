@@ -1,7 +1,12 @@
+import { useTranslations } from 'next-intl';
 import ProjectsList from './components/projects-list';
-import { projects } from '@/configs/main-items';
+import useProjects from '@/hooks/useProjects';
 
 const Projects = () => {
+  const t = useTranslations('ProjectsPage');
+
+  const projects = useProjects();
+
   const frontEndProjects = projects.filter(
     project => project.stack === 'frontend',
   );
@@ -17,10 +22,9 @@ const Projects = () => {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-4">
-        <h2 className="text-3xl font-bold">Meus projetos</h2>
+        <h2 className="text-3xl font-bold">{t('title')}</h2>
         <p className="opacity-60 text-base">
-          Nesta pagina estão listados alguns dos projetos que desenvolvi, se
-          quiser ver mais, é só acessar meu{' '}
+          {t('description')}{' '}
           <a
             href="https://github.com/RO-HSA/"
             target="_blank"

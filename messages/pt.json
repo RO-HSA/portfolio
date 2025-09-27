@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "Header": {
+      "role": "Desenvolvedor Full Stack"
+    },
+    "AboutMe": {
+      "title": "Sobre mim",
+      "content": "Olá, eu sou o Robert Santos, um Desenvolvedor Full Stack com 1 ano de experiência profissional na área, formando em Análise e Desenvolvimento de Sistemas. Sou um entusiasta de tecnologia e apaixonado por resolver problemas complexos, nascido e criado em Salvador/BA. Especializado em desenvolver sistemas que agregam valor ao mercado."
+    },
+    "ExperiencesList": {
+      "title": "Experiências",
+      "resumeButton": "Meu Currículo"
+    },
+    "EducationList": {
+      "title": "Formações"
+    },
+    "ProjectsList": {
+      "title": "Projetos"
+    }
+  },
+  "ProjectsPage": {
+    "title": "Projetos",
+    "description": "Nesta pagina estão listados alguns dos projetos que desenvolvi, se quiser ver mais, é só acessar meu"
+  },
+  "StacksPage": {
+    "title": "Tecnologias e Ferramentas",
+    "description": "Estas são as tecnologias e ferramentas que aprendi ao longo da minha carreira, durante a faculdade, cursos e projetos pessoais. Fique à vontade para explorar e conhecer as tecnologias que aprimoraram minha expertise em desenvolvimento.",
+    "database": "Banco de Dados",
+    "versioning": "Versionamento"
+  },
+  "Nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "stack": "Tecnologias e Ferramentas",
+    "email": "E-mail copiado com sucesso!"
+  },
+  "Section": {
+    "seeMore": "Saiba mais"
+  },
+  "ProjectBanner": {
+    "visit": "Visitar",
+    "repository": "Código-fonte"
+  },
+  "Experiences": {
+    "cloudiabotFull": {
+      "company": "Cloudiabot",
+      "role": "Desenvolvedor Full Stack"
+    },
+    "cloudiabotIntern": {
+      "company": "Cloudiabot",
+      "role": "Estágio Desenvolvimento Full Stack"
+    },
+    "sowitec": {
+      "company": "Sowitec Brasil",
+      "role": "Auxiliar de Contabilidade"
+    }
+  },
+  "Education": {
+    "unifacs": {
+      "institution": "UNIFACS",
+      "degree": "Ciências Contábeis"
+    },
+    "unime": {
+      "institution": "Faculdade UNIME",
+      "degree": "Análise e Desenvolvimento de Sistemas"
+    },
+    "ebac": {
+      "institution": "EBAC",
+      "degree": "Desenvolvimento Full Stack"
+    }
+  },
+  "Span": {
+    "span_month": "{count} mês",
+    "span_month_plural": "{count} meses",
+    "span_year": "{count} ano",
+    "span_year_plural": "{count} anos",
+    "span_and": " e ",
+    "span_current": "Atual"
+  },
+  "Projects": {
+    "streaminginteractions": {
+      "title": "Streaming Interactions",
+      "description": "Extensão de navegador publicada na Chrome Web Store, que adiciona uma barra lateral flutuante em sites de streaming, como Netflix, Disney+, Crunchyroll e outros, possibilitando que os usuários leiam, comentem e respondam outros comentários sobre o episódio ou filme que estão assistindo em tempo real. \nStacks: React, Typescript, Zustand."
+    },
+    "eplay": {
+      "title": "eplay",
+      "description": "Projeto com proposta educacional de uma loja de jogos, com funcionalidades de adicionar e remover itens do carrinho e contendo toda a jornada de compra. Desenvolvido utilizando React e Redux para gerenciamento global de estados."
+    },
+    "dtlabs": {
+      "title": "dtLabs Dashboard",
+      "description": "Solução desenvolvida para o desafio técnico da DTLabs, em React e Typescript"
+    }
+  }
+}

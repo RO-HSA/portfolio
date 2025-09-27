@@ -2,11 +2,15 @@ import { TbFolderCode } from 'react-icons/tb';
 
 import Section from './ui/section';
 import ProjectBanner from './ui/project-banner';
-import { projects } from '@/configs/main-items';
+import { useTranslations } from 'next-intl';
+import useProjects from '@/hooks/useProjects';
 
 const ProjectsList = () => {
+  const t = useTranslations('HomePage.ProjectsList');
+  const projects = useProjects();
+
   return (
-    <Section title="Projetos" icon={TbFolderCode} url="/projects">
+    <Section title={t('title')} icon={TbFolderCode} url="/projects">
       {projects
         .slice(0, 2)
         .map(

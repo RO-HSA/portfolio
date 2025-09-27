@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FC, ReactNode } from 'react';
 import { GoArrowUpRight } from 'react-icons/go';
 import { IconType } from 'react-icons';
+import { useTranslations } from 'next-intl';
 
 interface SectionProps {
   title: string;
@@ -11,6 +12,8 @@ interface SectionProps {
 }
 
 const Section: FC<SectionProps> = ({ title, icon: Icon, url, children }) => {
+  const t = useTranslations('Section');
+
   return (
     <section className="flex flex-col gap-6 border border-primary/30 p-7 rounded-lg w-full">
       <div className="flex justify-between">
@@ -23,7 +26,7 @@ const Section: FC<SectionProps> = ({ title, icon: Icon, url, children }) => {
             href={url}
             className="flex items-center text-primary font-normal text-xs"
           >
-            <span>Saiba mais</span>
+            <span>{t('seeMore')}</span>
             <GoArrowUpRight size={18} />
           </Link>
         )}

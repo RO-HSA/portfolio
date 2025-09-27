@@ -1,8 +1,10 @@
 import NavEmailButton from './ui/nav-email-btn';
 import LinkButton from './ui/link-button';
-import { sidebarItems } from '@/configs/sidebar-items';
+import { useSidebarItems } from '@/hooks';
 
 const Sidebar = () => {
+  const sidebarItems = useSidebarItems();
+
   return (
     <nav className="flex flex-col items-end pr-4 border-r border-primary/30 h-screen fixed">
       <ul className="flex flex-col items-end w-full gap-2">

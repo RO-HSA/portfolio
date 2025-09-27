@@ -9,6 +9,7 @@ import {
 } from '@headlessui/react';
 import { MdOutlineMail, MdContentCopy } from 'react-icons/md';
 import { FaRegSquareCheck } from 'react-icons/fa6';
+import { useTranslations } from 'next-intl';
 
 const Closer = () => {
   const close = useClose();
@@ -24,6 +25,8 @@ const Closer = () => {
 
 const NavEmailButton = () => {
   const [isCopying, setIsCopying] = useState<boolean>(false);
+
+  const t = useTranslations('Nav');
 
   const copyToClipboard = () => {
     setIsCopying(true);
@@ -61,7 +64,7 @@ const NavEmailButton = () => {
             transition
             className="bg-foreground/40 p-1 rounded-md text-foreground text-xs mt-2 transition duration-300 ease-in-out data-[closed]:opacity-0"
           >
-            <p>E-mail copiado com sucesso!</p>
+            <p>{t('email')}</p>
             <Closer />
           </PopoverPanel>
         </Popover>
