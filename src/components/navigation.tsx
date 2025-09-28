@@ -21,17 +21,17 @@ const Navigation = ({ children }: NavigationProps) => {
 
   return (
     <>
-      <div>
+      <div className="lg:flex-shrink-0">
         <Sidebar isOpen={isMenuOpen} onClose={closeMenu} />
       </div>
 
       <HamburguerButton onClick={toggleMenu} isOpen={isMenuOpen} />
 
-      {children}
+      <div className="flex-1 lg:ml-6">{children}</div>
 
       {isMenuOpen && (
         <div
-          className="before:fixed inset-0 before:bg-black/50 before:content-[''] before:w-full before:h-full before:z-10 lg:hidden"
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={closeMenu}
         />
       )}
