@@ -32,6 +32,7 @@ interface LinkButtonProps
     VariantProps<typeof linkButtonVariants> {
   link: string;
   shouldRenderLinkIcon?: boolean;
+  onClick?: () => void;
   children: ReactNode;
 }
 
@@ -41,6 +42,7 @@ const LinkButton: FC<LinkButtonProps> = ({
   variant,
   className,
   shouldRenderLinkIcon = false,
+  onClick,
 }) => {
   const pathname = usePathname();
   const isInternalLink = link.startsWith('/');
@@ -58,6 +60,7 @@ const LinkButton: FC<LinkButtonProps> = ({
       href={link}
       download={variant === 'download'}
       target={isInternalLink ? undefined : '_blank'}
+      onClick={onClick}
     >
       <div className="flex gap-1 items-center">{children}</div>
       {shouldRenderLinkIcon && !isInternalLink && <GoArrowUpRight size={18} />}
