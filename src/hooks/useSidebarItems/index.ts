@@ -25,7 +25,7 @@ const useSidebarItems = () => {
       title: t('stack'),
     },
     {
-      link: 'https://www.linkedin.com/in/robertsantosdev/',
+      link: 'https://www.linkedin.com/in/roberthorasantos/',
       icon: PiLinkedinLogoBold,
       title: 'Linkedin',
     },
